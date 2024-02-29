@@ -1,0 +1,3 @@
+ps -ef | grep nb_uwsgi.ini
+uwsgi --ini nb_uwsgi.ini &
+systemctl restart nginx

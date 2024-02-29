@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/css/bootstrap.css' %}">
+</head>
+
+<body>
+    <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">您的留言已提交成功！</h4>
+                </div>
+                <div class="modal-body">
+                  <p>您提交的留言是：{{ data.message }}</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="http://193.112.55.135/"><button type="button" class="btn btn-primary" data-dismiss="modal">Close</button></a>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+    </div>
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'plugins/bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/js/bootstrap.js' %}"></script>
+</body>
+
+</html>
